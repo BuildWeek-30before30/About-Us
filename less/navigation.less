@@ -1,16 +1,22 @@
-.nav_links {
+.nav-box {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    background-color: #3E3175;
-    border: 2px solid red;
-    margin-bottom: 100px;
-    a {
-        display: inline-block;
-        text-decoration: none;
-        padding: 0px 20px;
-        font-size: 2rem;
-        color: white;
+    flex-direction: row;
+    margin-bottom: 80px;
+    img {
+        width: 300px;
     }
-}
+    .nav_links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 400px;
+        a {
+            text-decoration: none;
+            color: @darkblue;
+        }
+        a:hover {
+            color: @lightblue;
+        }
+    }
+}   
