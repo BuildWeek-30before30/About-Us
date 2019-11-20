@@ -130,10 +130,20 @@ table {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  margin-bottom: 80px;
+  margin-bottom: 25px;
 }
-.nav-box img {
+@media (max-width: 500px) {
+  .nav-box {
+    flex-direction: column;
+  }
+}
+.nav-box .logo {
   width: 300px;
+}
+@media (max-width: 500px) {
+  .nav-box .logo {
+    margin: auto;
+  }
 }
 .nav-box .nav_links {
   display: flex;
@@ -159,61 +169,76 @@ footer {
 footer img {
   width: 20px;
 }
+@media (max-width: 500px) {
+  footer {
+    margin-top: 1840px;
+    border: 2px red solid;
+  }
+}
 html {
-  font-size: 16px;
+  font-size: 67.5%;
+  background-color: #f7f9fb;
 }
 html body {
-  margin: 0;
-}
-.team {
   display: flex;
+  font-family: 'Montserrat';
+  font-size: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+  color: #31708E;
+  flex-direction: column;
+}
+html body .team {
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 780px;
 }
-.team .content {
-  margin: 10px;
-}
-.team h1 {
+html body .team h1 {
   font-weight: 900;
   font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 25px;
 }
-.team .cards {
+html body .team .cards {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
 }
-.team .cards section {
+html body .team .cards section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 280px;
+  width: 245px;
   margin: 20px;
   padding: 20px;
   box-shadow: 0px 0px 15px #5085A5;
   border-radius: 35px;
   transition: background-color 0.3s ease-in;
 }
-.team .cards section p {
+html body .team .cards section p {
   font-weight: 500;
   font-size: 1.1rem;
   text-align: center;
 }
-.team .cards section .title {
+html body .team .cards section .title {
   font-weight: 600;
   font-size: 1.25rem;
   text-align: center;
 }
-.team .cards section a {
+html body .team .cards section a {
   text-decoration: none;
 }
-.team .cards section img {
+html body .team .cards section img {
   height: 250px;
   width: 250px;
   object-fit: cover;
   border-radius: 15px;
+}
+@media (max-width: 500px) {
+  html body .team {
+    max-width: 500px;
+  }
 }

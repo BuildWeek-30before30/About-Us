@@ -2,9 +2,15 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin-bottom: 80px;
-    img {
+    margin-bottom: 25px;
+    @media @mobile {
+        flex-direction: column;
+    }
+    .logo {
         width: 300px;
+        @media @mobile {
+            margin: auto;
+        }
     }
     .nav_links {
         display: flex;
