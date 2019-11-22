@@ -61,5 +61,83 @@ html {
                 max-width: 500px;
             }
         }
+        header {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            height: 475px;
+            background-image: url(https://files.slack.com/files-pri/T4JUEB3ME-FQPU2FXQX/kamil-pietrzak-ibmtjlic9km-unsplash.jpg);
+            background-size: cover;
+            border-radius: 20px;
+            @media @mobile {
+                background-image: none;
+                margin-bottom: 25px;
+            }
+            h2 {
+                font-size: 7rem;
+                padding-bottom: 30px;
+                padding-top: 150px;
+                font-family: 'Pattaya';
+            }
+            .call-to-action {
+                .center(flex,center);
+                margin: 5px;
+                flex-direction: row;
+                .sign-up button {
+                    background: @green;
+                }
+                button {
+                    margin: 10px;
+                    width: 100px;
+                    height: 50px;
+                    font-size: 1.7rem;
+                    background: @blue2;
+                    color: @white;
+                    border-radius: 16px;
+                    border: none;
+                }
+                button:hover {
+                    background-color: @white;
+                    color: @darkblue;
+                }
+            }
+        }
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            .content-box {
+                display: flex;
+                padding: 10px;
+                align-items: center;
+                margin: 10px;
+                justify-content: space-between;
+                @media @tablet {
+                    flex-direction: column;
+                }
+                img {
+                    width: 350px;
+                    border-radius: 20px;
+                }
+                .text-content {
+                    padding: 15px;
+                    h2 {
+                        font-size: 2.6rem;
+                        text-align: center;
+                        padding: 10px;
+                        font-family: 'Pattaya';
+                    }
+                }
+                .about {
+                    display: flex;
+                    justify-content: space-between;
+                    @media @tablet {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        align-items: center;
+                    }
+                }
+            }
+        }
     }
 }

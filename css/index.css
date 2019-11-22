@@ -132,9 +132,11 @@ table {
   flex-direction: row;
   margin-bottom: 25px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .nav-box {
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
   }
 }
 .nav-box .logo {
@@ -142,7 +144,7 @@ table {
 }
 @media (max-width: 500px) {
   .nav-box .logo {
-    margin: auto;
+    margin-left: 50px;
   }
 }
 .nav-box .nav_links {
@@ -172,7 +174,11 @@ footer img {
 @media (max-width: 500px) {
   footer {
     margin-top: 1840px;
-    border: 2px red solid;
+  }
+}
+@media (max-width: 800px) {
+  footer {
+    margin-top: 1840px;
   }
 }
 html {
@@ -240,5 +246,90 @@ html body .team .cards section img {
 @media (max-width: 500px) {
   html body .team {
     max-width: 500px;
+  }
+}
+html body header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 475px;
+  background-image: url(https://files.slack.com/files-pri/T4JUEB3ME-FQPU2FXQX/kamil-pietrzak-ibmtjlic9km-unsplash.jpg);
+  background-size: cover;
+  border-radius: 20px;
+}
+@media (max-width: 500px) {
+  html body header {
+    background-image: none;
+    margin-bottom: 25px;
+  }
+}
+html body header h2 {
+  font-size: 7rem;
+  padding-bottom: 30px;
+  padding-top: 150px;
+  font-family: 'Pattaya';
+}
+html body header .call-to-action {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  flex-direction: row;
+}
+html body header .call-to-action .sign-up button {
+  background: #687864;
+}
+html body header .call-to-action button {
+  margin: 10px;
+  width: 100px;
+  height: 50px;
+  font-size: 1.7rem;
+  background: #5085A5;
+  color: #F7F9FB;
+  border-radius: 16px;
+  border: none;
+}
+html body header .call-to-action button:hover {
+  background-color: #F7F9FB;
+  color: #31708E;
+}
+html body .main-content {
+  display: flex;
+  flex-direction: column;
+}
+html body .main-content .content-box {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  margin: 10px;
+  justify-content: space-between;
+}
+@media (max-width: 800px) {
+  html body .main-content .content-box {
+    flex-direction: column;
+  }
+}
+html body .main-content .content-box img {
+  width: 350px;
+  border-radius: 20px;
+}
+html body .main-content .content-box .text-content {
+  padding: 15px;
+}
+html body .main-content .content-box .text-content h2 {
+  font-size: 2.6rem;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Pattaya';
+}
+html body .main-content .content-box .about {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 800px) {
+  html body .main-content .content-box .about {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
   }
 }
